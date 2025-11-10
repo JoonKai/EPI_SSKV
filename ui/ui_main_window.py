@@ -1,0 +1,103 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'main_windowEaSJGO.ui'
+##
+## Created by: Qt User Interface Compiler version 6.10.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
+    QCursor, QFont, QFontDatabase, QGradient,
+    QIcon, QImage, QKeySequence, QLinearGradient,
+    QPainter, QPalette, QPixmap, QRadialGradient,
+    QTransform)
+from PySide6.QtWidgets import (QApplication, QGridLayout, QMainWindow, QMdiArea,
+    QMenu, QMenuBar, QSizePolicy, QStatusBar,
+    QWidget)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(750, 646)
+        self.mn_settings_window = QAction(MainWindow)
+        self.mn_settings_window.setObjectName(u"mn_settings_window")
+        self.actionMOCVD = QAction(MainWindow)
+        self.actionMOCVD.setObjectName(u"actionMOCVD")
+        self.mn_measurement_equipment = QAction(MainWindow)
+        self.mn_measurement_equipment.setObjectName(u"mn_measurement_equipment")
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.mdiArea = QMdiArea(self.centralwidget)
+        self.mdiArea.setObjectName(u"mdiArea")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.mdiArea.sizePolicy().hasHeightForWidth())
+        self.mdiArea.setSizePolicy(sizePolicy)
+        brush = QBrush(QColor(0, 103, 103, 255))
+        brush.setStyle(Qt.BrushStyle.DiagCrossPattern)
+        self.mdiArea.setBackground(brush)
+
+        self.gridLayout.addWidget(self.mdiArea, 0, 0, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QMenuBar(MainWindow)
+        self.menubar.setObjectName(u"menubar")
+        self.menubar.setGeometry(QRect(0, 0, 750, 33))
+        self.menu = QMenu(self.menubar)
+        self.menu.setObjectName(u"menu")
+        self.menu_2 = QMenu(self.menubar)
+        self.menu_2.setObjectName(u"menu_2")
+        self.menu_3 = QMenu(self.menubar)
+        self.menu_3.setObjectName(u"menu_3")
+        self.menu_4 = QMenu(self.menubar)
+        self.menu_4.setObjectName(u"menu_4")
+        self.menu_5 = QMenu(self.menubar)
+        self.menu_5.setObjectName(u"menu_5")
+        self.menu_6 = QMenu(self.menubar)
+        self.menu_6.setObjectName(u"menu_6")
+        self.menu_7 = QMenu(self.menubar)
+        self.menu_7.setObjectName(u"menu_7")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.menubar.addAction(self.menu.menuAction())
+        self.menubar.addAction(self.menu_7.menuAction())
+        self.menubar.addAction(self.menu_2.menuAction())
+        self.menubar.addAction(self.menu_3.menuAction())
+        self.menubar.addAction(self.menu_4.menuAction())
+        self.menubar.addAction(self.menu_5.menuAction())
+        self.menubar.addAction(self.menu_6.menuAction())
+        self.menu_3.addAction(self.actionMOCVD)
+        self.menu_3.addAction(self.mn_measurement_equipment)
+        self.menu_7.addAction(self.mn_settings_window)
+
+        self.retranslateUi(MainWindow)
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.mn_settings_window.setText(QCoreApplication.translate("MainWindow", u"\ud658\uacbd\uc124\uc815", None))
+        self.actionMOCVD.setText(QCoreApplication.translate("MainWindow", u"MOCVD", None))
+        self.mn_measurement_equipment.setText(QCoreApplication.translate("MainWindow", u"\uce21\uc815\uc124\ube44", None))
+        self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\ud30c\uc77c", None))
+        self.menu_2.setTitle(QCoreApplication.translate("MainWindow", u"\ub370\uc774\ud130\ubca0\uc774\uc2a4", None))
+        self.menu_3.setTitle(QCoreApplication.translate("MainWindow", u"\uc124\ube44", None))
+        self.menu_4.setTitle(QCoreApplication.translate("MainWindow", u"\uc81c\uc870", None))
+        self.menu_5.setTitle(QCoreApplication.translate("MainWindow", u"\uacf5\uc815", None))
+        self.menu_6.setTitle(QCoreApplication.translate("MainWindow", u"\uae30\ud0c0", None))
+        self.menu_7.setTitle(QCoreApplication.translate("MainWindow", u"\uc124\uc815", None))
+    # retranslateUi
+
