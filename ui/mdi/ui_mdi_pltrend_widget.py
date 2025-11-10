@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mdi_measuring_equipment_widgeteVCbKF.ui'
+## Form generated from reading UI file 'mdi_pltrend_widgetDGDYwg.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QScrollArea,
     QSizePolicy, QSplitter, QVBoxLayout, QWidget)
 
-class Ui_measuring_equipment(object):
+class PLTrend(object):
     def setupUi(self, measuring_equipment):
         if not measuring_equipment.objectName():
             measuring_equipment.setObjectName(u"measuring_equipment")
@@ -52,7 +52,7 @@ class Ui_measuring_equipment(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 317, 111))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 54, 258))
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.splitter_2.addWidget(self.scrollArea)
 
