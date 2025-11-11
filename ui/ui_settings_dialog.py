@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'settings_dialogOuMuZJ.ui'
+## Form generated from reading UI file 'settings_dialogPNNMLk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -19,16 +19,19 @@ from PySide6.QtWidgets import (QAbstractButton, QApplication, QDialog, QDialogBu
     QGridLayout, QSizePolicy, QTabWidget, QVBoxLayout,
     QWidget)
 
-class settings(object):
-    def setupUi(self, Dialog):
-        if not Dialog.objectName():
-            Dialog.setObjectName(u"Dialog")
-        Dialog.resize(604, 418)
-        self.gridLayout = QGridLayout(Dialog)
+class Ui_Settings(object):
+    def setupUi(self, Settings):
+        if not Settings.objectName():
+            Settings.setObjectName(u"Settings")
+        Settings.resize(604, 418)
+        self.gridLayout = QGridLayout(Settings)
+        self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(2, 2, 2, 2)
         self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.tabWidget = QTabWidget(Dialog)
+        self.tabWidget = QTabWidget(Settings)
         self.tabWidget.setObjectName(u"tabWidget")
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
@@ -39,7 +42,7 @@ class settings(object):
 
         self.verticalLayout.addWidget(self.tabWidget)
 
-        self.buttonBox = QDialogButtonBox(Dialog)
+        self.buttonBox = QDialogButtonBox(Settings)
         self.buttonBox.setObjectName(u"buttonBox")
         self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Ok)
@@ -50,16 +53,16 @@ class settings(object):
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
 
 
-        self.retranslateUi(Dialog)
-        self.buttonBox.accepted.connect(Dialog.accept)
-        self.buttonBox.rejected.connect(Dialog.reject)
+        self.retranslateUi(Settings)
+        self.buttonBox.accepted.connect(Settings.accept)
+        self.buttonBox.rejected.connect(Settings.reject)
 
-        QMetaObject.connectSlotsByName(Dialog)
+        QMetaObject.connectSlotsByName(Settings)
     # setupUi
 
-    def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Dialog", u"Tab 1", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Dialog", u"Tab 2", None))
+    def retranslateUi(self, Settings):
+        Settings.setWindowTitle(QCoreApplication.translate("Settings", u"Dialog", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Settings", u"Tab 1", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Settings", u"Tab 2", None))
     # retranslateUi
 

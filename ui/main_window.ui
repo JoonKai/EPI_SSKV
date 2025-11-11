@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>876</width>
-    <height>634</height>
+    <width>889</width>
+    <height>642</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,6 +15,21 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>1</number>
+    </property>
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <property name="bottomMargin">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <widget class="QMdiArea" name="mdiArea">
       <property name="sizePolicy">
@@ -24,11 +39,11 @@
        </sizepolicy>
       </property>
       <property name="background">
-       <brush brushstyle="DiagCrossPattern">
+       <brush brushstyle="FDiagPattern">
         <color alpha="255">
          <red>0</red>
-         <green>134</green>
-         <blue>134</blue>
+         <green>184</green>
+         <blue>184</blue>
         </color>
        </brush>
       </property>
@@ -41,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>876</width>
+     <width>889</width>
      <height>33</height>
     </rect>
    </property>
@@ -108,6 +123,10 @@
     <property name="title">
      <string>매크로</string>
     </property>
+    <addaction name="actionFactory_Modeler"/>
+    <addaction name="actionEES"/>
+    <addaction name="actionWindows"/>
+    <addaction name="actionPL"/>
    </widget>
    <widget class="QMenu" name="menu_10">
     <property name="title">
@@ -153,6 +172,26 @@
   <action name="action_2">
    <property name="text">
     <string>로봇제어</string>
+   </property>
+  </action>
+  <action name="actionFactory_Modeler">
+   <property name="text">
+    <string>Factory Modeler</string>
+   </property>
+  </action>
+  <action name="actionEES">
+   <property name="text">
+    <string>EES</string>
+   </property>
+  </action>
+  <action name="actionWindows">
+   <property name="text">
+    <string>Windows</string>
+   </property>
+  </action>
+  <action name="actionPL">
+   <property name="text">
+    <string>PL</string>
    </property>
   </action>
  </widget>

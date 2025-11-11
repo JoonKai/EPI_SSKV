@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowHxyvqw.ui'
+## Form generated from reading UI file 'main_windowBjwNvN.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(876, 634)
+        MainWindow.resize(889, 642)
         self.mn_settings_window = QAction(MainWindow)
         self.mn_settings_window.setObjectName(u"mn_settings_window")
         self.mn_pltrend = QAction(MainWindow)
@@ -37,10 +37,20 @@ class Ui_MainWindow(object):
         self.actionMariaDB.setObjectName(u"actionMariaDB")
         self.action_2 = QAction(MainWindow)
         self.action_2.setObjectName(u"action_2")
+        self.actionFactory_Modeler = QAction(MainWindow)
+        self.actionFactory_Modeler.setObjectName(u"actionFactory_Modeler")
+        self.actionEES = QAction(MainWindow)
+        self.actionEES.setObjectName(u"actionEES")
+        self.actionWindows = QAction(MainWindow)
+        self.actionWindows.setObjectName(u"actionWindows")
+        self.actionPL = QAction(MainWindow)
+        self.actionPL.setObjectName(u"actionPL")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(1, 1, 1, 1)
         self.mdiArea = QMdiArea(self.centralwidget)
         self.mdiArea.setObjectName(u"mdiArea")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
@@ -48,8 +58,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.mdiArea.sizePolicy().hasHeightForWidth())
         self.mdiArea.setSizePolicy(sizePolicy)
-        brush = QBrush(QColor(0, 134, 134, 255))
-        brush.setStyle(Qt.BrushStyle.DiagCrossPattern)
+        brush = QBrush(QColor(0, 184, 184, 255))
+        brush.setStyle(Qt.BrushStyle.FDiagPattern)
         self.mdiArea.setBackground(brush)
 
         self.gridLayout.addWidget(self.mdiArea, 0, 0, 1, 1)
@@ -57,7 +67,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 876, 33))
+        self.menubar.setGeometry(QRect(0, 0, 889, 33))
         self.menu = QMenu(self.menubar)
         self.menu.setObjectName(u"menu")
         self.menu_2 = QMenu(self.menubar)
@@ -105,6 +115,10 @@ class Ui_MainWindow(object):
         self.menu_8.addAction(self.action)
         self.menuMOCVD.addAction(self.actionMOCVD_2)
         self.menu_7.addAction(self.mn_settings_window)
+        self.menu_9.addAction(self.actionFactory_Modeler)
+        self.menu_9.addAction(self.actionEES)
+        self.menu_9.addAction(self.actionWindows)
+        self.menu_9.addAction(self.actionPL)
 
         self.retranslateUi(MainWindow)
 
@@ -119,6 +133,10 @@ class Ui_MainWindow(object):
         self.actionMOCVD_2.setText(QCoreApplication.translate("MainWindow", u"MOCVD", None))
         self.actionMariaDB.setText(QCoreApplication.translate("MainWindow", u"MariaDB", None))
         self.action_2.setText(QCoreApplication.translate("MainWindow", u"\ub85c\ubd07\uc81c\uc5b4", None))
+        self.actionFactory_Modeler.setText(QCoreApplication.translate("MainWindow", u"Factory Modeler", None))
+        self.actionEES.setText(QCoreApplication.translate("MainWindow", u"EES", None))
+        self.actionWindows.setText(QCoreApplication.translate("MainWindow", u"Windows", None))
+        self.actionPL.setText(QCoreApplication.translate("MainWindow", u"PL", None))
         self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\ud30c\uc77c", None))
         self.menu_2.setTitle(QCoreApplication.translate("MainWindow", u"\ub370\uc774\ud130\ubca0\uc774\uc2a4", None))
         self.menuDB.setTitle(QCoreApplication.translate("MainWindow", u"DB", None))

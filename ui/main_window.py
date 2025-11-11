@@ -11,7 +11,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setupUi(self)
-        self.resize(1000, 700)
+        self.resize(1200, 700)
+        self.setWindowTitle("EPI")
         self.mn_settings_window.triggered.connect(self.open_settings_window)
         self.mn_pltrend.triggered.connect(self.open_sub_measuring_equipment)
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mdi_pltrend_widgetDGDYwg.ui'
+## Form generated from reading UI file 'mdi_pltrend_widgetraVDKx.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -18,29 +18,36 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QScrollArea,
     QSizePolicy, QSplitter, QVBoxLayout, QWidget)
 
-class PLTrend(object):
-    def setupUi(self, measuring_equipment):
-        if not measuring_equipment.objectName():
-            measuring_equipment.setObjectName(u"measuring_equipment")
-        measuring_equipment.resize(683, 530)
-        self.gridLayout = QGridLayout(measuring_equipment)
+class Ui_PLTrend(object):
+    def setupUi(self, PLTrend):
+        if not PLTrend.objectName():
+            PLTrend.setObjectName(u"PLTrend")
+        PLTrend.resize(683, 530)
+        self.gridLayout = QGridLayout(PLTrend)
+        self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.splitter = QSplitter(measuring_equipment)
+        self.splitter = QSplitter(PLTrend)
         self.splitter.setObjectName(u"splitter")
+        self.splitter.setLineWidth(0)
         self.splitter.setOrientation(Qt.Orientation.Vertical)
         self.frame = QFrame(self.splitter)
         self.frame.setObjectName(u"frame")
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.frame.setLineWidth(0)
         self.splitter.addWidget(self.frame)
         self.frame_2 = QFrame(self.splitter)
         self.frame_2.setObjectName(u"frame_2")
         self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_2 = QGridLayout(self.frame_2)
+        self.gridLayout_2.setSpacing(0)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.splitter_2 = QSplitter(self.frame_2)
         self.splitter_2.setObjectName(u"splitter_2")
         self.splitter_2.setOrientation(Qt.Orientation.Horizontal)
@@ -52,7 +59,7 @@ class PLTrend(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 54, 258))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 54, 286))
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.splitter_2.addWidget(self.scrollArea)
 
@@ -71,12 +78,12 @@ class PLTrend(object):
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
 
 
-        self.retranslateUi(measuring_equipment)
+        self.retranslateUi(PLTrend)
 
-        QMetaObject.connectSlotsByName(measuring_equipment)
+        QMetaObject.connectSlotsByName(PLTrend)
     # setupUi
 
-    def retranslateUi(self, measuring_equipment):
-        measuring_equipment.setWindowTitle(QCoreApplication.translate("measuring_equipment", u"Form", None))
+    def retranslateUi(self, PLTrend):
+        PLTrend.setWindowTitle(QCoreApplication.translate("PLTrend", u"Form", None))
     # retranslateUi
 
