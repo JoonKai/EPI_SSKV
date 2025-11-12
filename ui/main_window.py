@@ -2,6 +2,7 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QProgressDialog, QMdiSubWindow
 from PySide6.QtCore import Qt
 from controller.pltrend_controller import PLTrendController
+from controller.fmmacro_controller import FMMacroController
 from ui_main_window import Ui_MainWindow
 from settings_dialog import SettingsDialog
 
@@ -14,14 +15,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.resize(1200, 700)
         self.setWindowTitle("EPI")
         self.mn_settings_window.triggered.connect(self.open_settings_window)
-        self.mn_pltrend.triggered.connect(self.open_sub_measuring_equipment)
+        self.mn_pltrend.triggered.connect(self.open_sub_pltrend)
+        self.mn_fmmacro.triggered.connect(self.open_sub_fmmacro)
 
 
     def open_settings_window(self):
         dlg = SettingsDialog(self)
         dlg.exec()
 
-    def open_sub_measuring_equipment(self): 
+    def open_sub_pltrend(self): 
         for sub in self.mdiArea.subWindowList(): 
             if isinstance(sub.widget(), PLTrendController):
                 sub.activateWindow() 
@@ -32,6 +34,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         sub = QMdiSubWindow() 
         sub.setWidget(sub_widget) 
         sub.setWindowTitle("측정 설비")  
+        sub.resize(700, 500) 
+        sub.setAttribute(Qt.WA_DeleteOnClose, True) 
+        self.mdiArea.addSubWindow(sub) 
+        sub.show()
+
+    def open_sub_fmmacro(self): 
+        for sub in self.mdiArea.subWindowList(): 
+            if isinstance(sub.widget(), FMMacroController):
+                sub.activateWindow() 
+                self.mdiArea.setActiveSubWindow(sub) 
+                return
+        
+        sub_widget = FMMacroController(self) 
+        sub = QMdiSubWindow() 
+        sub.setWidget(sub_widget) 
+        sub.setWindowTitle("팩토리모델러 매크로")  
         sub.resize(700, 500) 
         sub.setAttribute(Qt.WA_DeleteOnClose, True) 
         self.mdiArea.addSubWindow(sub) 

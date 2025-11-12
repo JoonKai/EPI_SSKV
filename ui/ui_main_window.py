@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowBjwNvN.ui'
+## Form generated from reading UI file 'main_windowtJZCtm.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -37,8 +37,8 @@ class Ui_MainWindow(object):
         self.actionMariaDB.setObjectName(u"actionMariaDB")
         self.action_2 = QAction(MainWindow)
         self.action_2.setObjectName(u"action_2")
-        self.actionFactory_Modeler = QAction(MainWindow)
-        self.actionFactory_Modeler.setObjectName(u"actionFactory_Modeler")
+        self.mn_fmmacro = QAction(MainWindow)
+        self.mn_fmmacro.setObjectName(u"mn_fmmacro")
         self.actionEES = QAction(MainWindow)
         self.actionEES.setObjectName(u"actionEES")
         self.actionWindows = QAction(MainWindow)
@@ -115,7 +115,7 @@ class Ui_MainWindow(object):
         self.menu_8.addAction(self.action)
         self.menuMOCVD.addAction(self.actionMOCVD_2)
         self.menu_7.addAction(self.mn_settings_window)
-        self.menu_9.addAction(self.actionFactory_Modeler)
+        self.menu_9.addAction(self.mn_fmmacro)
         self.menu_9.addAction(self.actionEES)
         self.menu_9.addAction(self.actionWindows)
         self.menu_9.addAction(self.actionPL)
@@ -133,7 +133,7 @@ class Ui_MainWindow(object):
         self.actionMOCVD_2.setText(QCoreApplication.translate("MainWindow", u"MOCVD", None))
         self.actionMariaDB.setText(QCoreApplication.translate("MainWindow", u"MariaDB", None))
         self.action_2.setText(QCoreApplication.translate("MainWindow", u"\ub85c\ubd07\uc81c\uc5b4", None))
-        self.actionFactory_Modeler.setText(QCoreApplication.translate("MainWindow", u"Factory Modeler", None))
+        self.mn_fmmacro.setText(QCoreApplication.translate("MainWindow", u"Factory Modeler", None))
         self.actionEES.setText(QCoreApplication.translate("MainWindow", u"EES", None))
         self.actionWindows.setText(QCoreApplication.translate("MainWindow", u"Windows", None))
         self.actionPL.setText(QCoreApplication.translate("MainWindow", u"PL", None))
