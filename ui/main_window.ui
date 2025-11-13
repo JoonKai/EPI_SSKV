@@ -64,6 +64,7 @@
     <property name="title">
      <string>파일</string>
     </property>
+    <addaction name="actionOpen"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -132,6 +133,8 @@
     <property name="title">
      <string>뷰어</string>
     </property>
+    <addaction name="actionPL_Viewer"/>
+    <addaction name="actionXRD_Viewer"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_7"/>
@@ -192,6 +195,21 @@
   <action name="actionPL">
    <property name="text">
     <string>PL</string>
+   </property>
+  </action>
+  <action name="actionPL_Viewer">
+   <property name="text">
+    <string>PL Viewer</string>
+   </property>
+  </action>
+  <action name="actionXRD_Viewer">
+   <property name="text">
+    <string>XRD Viewer</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
    </property>
   </action>
  </widget>

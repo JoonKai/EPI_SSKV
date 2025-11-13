@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowtJZCtm.ui'
+## Form generated from reading UI file 'main_windowYUzdFx.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -45,6 +45,12 @@ class Ui_MainWindow(object):
         self.actionWindows.setObjectName(u"actionWindows")
         self.actionPL = QAction(MainWindow)
         self.actionPL.setObjectName(u"actionPL")
+        self.actionPL_Viewer = QAction(MainWindow)
+        self.actionPL_Viewer.setObjectName(u"actionPL_Viewer")
+        self.actionXRD_Viewer = QAction(MainWindow)
+        self.actionXRD_Viewer.setObjectName(u"actionXRD_Viewer")
+        self.actionOpen = QAction(MainWindow)
+        self.actionOpen.setObjectName(u"actionOpen")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
@@ -106,6 +112,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu_4.menuAction())
         self.menubar.addAction(self.menu_5.menuAction())
         self.menubar.addAction(self.menu_6.menuAction())
+        self.menu.addAction(self.actionOpen)
         self.menu_2.addAction(self.menuDB.menuAction())
         self.menuDB.addAction(self.actionMariaDB)
         self.menu_3.addAction(self.menuMOCVD.menuAction())
@@ -119,6 +126,8 @@ class Ui_MainWindow(object):
         self.menu_9.addAction(self.actionEES)
         self.menu_9.addAction(self.actionWindows)
         self.menu_9.addAction(self.actionPL)
+        self.menu_10.addAction(self.actionPL_Viewer)
+        self.menu_10.addAction(self.actionXRD_Viewer)
 
         self.retranslateUi(MainWindow)
 
@@ -137,6 +146,9 @@ class Ui_MainWindow(object):
         self.actionEES.setText(QCoreApplication.translate("MainWindow", u"EES", None))
         self.actionWindows.setText(QCoreApplication.translate("MainWindow", u"Windows", None))
         self.actionPL.setText(QCoreApplication.translate("MainWindow", u"PL", None))
+        self.actionPL_Viewer.setText(QCoreApplication.translate("MainWindow", u"PL Viewer", None))
+        self.actionXRD_Viewer.setText(QCoreApplication.translate("MainWindow", u"XRD Viewer", None))
+        self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\ud30c\uc77c", None))
         self.menu_2.setTitle(QCoreApplication.translate("MainWindow", u"\ub370\uc774\ud130\ubca0\uc774\uc2a4", None))
         self.menuDB.setTitle(QCoreApplication.translate("MainWindow", u"DB", None))

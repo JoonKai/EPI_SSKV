@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mdi_fmmacro_widgeteBkMJg.ui'
+## Form generated from reading UI file 'mdi_fmmacro_widgetXfrsWK.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.0
 ##
@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QLabel,
-    QLineEdit, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLineEdit, QPlainTextEdit, QPushButton,
+    QSizePolicy, QVBoxLayout, QWidget)
 
 class Ui_FMMacro(object):
     def setupUi(self, FMMacro):
@@ -69,6 +69,11 @@ class Ui_FMMacro(object):
 
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.plainTextEdit = QPlainTextEdit(FMMacro)
+        self.plainTextEdit.setObjectName(u"plainTextEdit")
+
+        self.verticalLayout_3.addWidget(self.plainTextEdit)
+
 
         self.horizontalLayout.addLayout(self.verticalLayout_3)
 
@@ -79,6 +84,45 @@ class Ui_FMMacro(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.verticalLayout_4 = QVBoxLayout()
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.frame = QFrame(FMMacro)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.verticalLayout_4.addWidget(self.frame)
+
+
+        self.horizontalLayout_2.addLayout(self.verticalLayout_4)
+
+        self.verticalLayout_6 = QVBoxLayout()
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.frame_2 = QFrame(FMMacro)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.verticalLayout_6.addWidget(self.frame_2)
+
+
+        self.horizontalLayout_2.addLayout(self.verticalLayout_6)
+
+        self.verticalLayout_5 = QVBoxLayout()
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.frame_3 = QFrame(FMMacro)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.verticalLayout_5.addWidget(self.frame_3)
+
+
+        self.horizontalLayout_2.addLayout(self.verticalLayout_5)
+
+        self.horizontalLayout_2.setStretch(0, 3)
+        self.horizontalLayout_2.setStretch(1, 3)
+        self.horizontalLayout_2.setStretch(2, 3)
 
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 

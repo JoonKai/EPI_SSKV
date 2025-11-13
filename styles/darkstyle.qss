@@ -316,13 +316,13 @@ QComboBox QAbstractItemView {
 
 
 /*##########################################################MDI UI 스타일##################################################*/ 
-QMdiSubWindow {
+/* QMdiSubWindow {
     background: #d8dad8;
     border: 1px solid #000000;
-}
+} */
 
 /* 타이틀 영역 */
-QMdiSubWindow::title {
+/* QMdiSubWindow::title {
     background: #ffffff;
     font-size: 13px;
     color: #000000;
@@ -330,10 +330,10 @@ QMdiSubWindow::title {
     border: 1px solid #000000;
     padding-left: -3;
     padding-right: -13;
-}
+} */
 
 /* 창 버튼 */
-QMdiSubWindow::close-button,
+/* QMdiSubWindow::close-button,
 QMdiSubWindow::minimize-button,
 QMdiSubWindow::normal-button,
 QMdiSubWindow::maximize-button {
@@ -342,10 +342,10 @@ QMdiSubWindow::maximize-button {
     width: 20px; height: 18px;
     /* margin: 0px 10px 10px 0px; */
     /* border-radius: 4px; */
-}
-QMdiSubWindow::close-button:hover      { background: #000000; }
+/* } */
+/* QMdiSubWindow::close-button:hover      { background: #000000; }
 QMdiSubWindow::maximize-button:hover  { background: #000000; } 
 QMdiSubWindow::normal-button:hover     { background: #000000; }
-QMdiSubWindow::minimize-button:hover   { background: #000000; } 
+QMdiSubWindow::minimize-button:hover   { background: #000000; }  */ 
 
 /*------------------------------------------------------------------------------------------------------------------------*/
