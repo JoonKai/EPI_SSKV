@@ -11,3 +11,13 @@ class FMMacroController(QWidget):
         self.ui.setupUi(self)
         self.resize(800, 600)
         self.setWindowTitle("팩토리 모델러 매크로")
+        self.apply_styles()# qss 스타일 적용
+
+    def apply_styles(self):
+        qss_path = "styles/fmmacro_style.qss"  # 상대경로 또는 절대경로
+        try:
+            with open(qss_path, "r", encoding="utf-8") as f:
+                qss = f.read()
+                self.setStyleSheet(qss)
+        except Exception as e:
+            print(f"QSS 로드 오류: {e}")
